@@ -1,0 +1,1 @@
+#mak a function Extract some interesting data from the dictionary and print it to the console in a friendlyand informative forma
