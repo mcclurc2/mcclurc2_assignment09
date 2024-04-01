@@ -1,1 +1,0 @@
-# make a function doing Parse the results into a Python dictionary
