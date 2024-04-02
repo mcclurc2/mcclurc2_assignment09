@@ -1,4 +1,4 @@
-# Name:Chase McClure, Cameron Hogan, Riley
+# Name:Chase McClure, Cameron Hogan, Riley Kinkade
 # email:mcclurc2@mail.uc.edu
 # Assignment Number: Assignment 09
 # Due Date: april 4 
@@ -39,4 +39,15 @@ def extractInfo():
 
     parsed_json = json.loads(json_string) # Now we have a python dictionary
     
-    
+    print(parsed_json)
+    print(parsed_json['items'][0]['description'])
+
+   
+
+    total = int(parsed_json['total']) # The number of parks that were returned
+
+ 
+
+if __name__ == "__main__":
+
+    pass
