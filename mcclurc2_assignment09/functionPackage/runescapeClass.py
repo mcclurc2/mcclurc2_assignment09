@@ -7,7 +7,7 @@
 # Brief Description of the assignment: this assignment is to see if we can get an api url and to read informatoin. to take the url run code to read and get important informaiation from it as well to be able to follow directions and do what the assignment says
 # Brief Description of what this module does. Do not copy/paste from a previous assignment. Put some thought into this. this module shows us how to connect to an api from eclipse and to read it rfom here
 # Citations:canvas slides
-
+# Anything else that's relevant: as of doing this no
 
 
 import requests
@@ -28,9 +28,11 @@ class runescape:
  
 
 def extractInfo():
-
- 
-
+    '''
+     creates a python dictionary and gets extracted information from the decription from API
+     prints: decription
+     returns:none
+    '''
     response = requests.get('https://secure.runescape.com/m=itemdb_rs/api/catalogue/items.json?category=9&alpha=c&page=1')
 
     json_string = response.content
@@ -41,10 +43,6 @@ def extractInfo():
     
     print(parsed_json)
     print(parsed_json['items'][0]['description'])
-
-   
-
-    total = int(parsed_json['total']) # The number of parks that were returned
 
  
 
